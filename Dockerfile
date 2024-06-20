@@ -8,3 +8,4 @@ RUN apt-get install -y net-tools
 
 RUN  DEBIAN_FRONTEND=noninteractive apt-get install -yq asterisk
 COPY sip.conf /etc/asterisk/sip.conf
+COPY extensions.conf /etc/asterisk/extensions.conf
